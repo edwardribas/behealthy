@@ -1,0 +1,80 @@
+[
+    {
+        "treino": "A",
+        "area": "Costas e bíceps",
+        "treinos": [
+            { "nome": "Puxada aberta", "series": 4, "repeticoes": 12, "img": "https://www.fiqueinforma.com/wp-content/uploads/2008/12/puxadas.jpg" },
+            { "nome": "Puxada unilateral", "series": 4, "repeticoes": 12, "img": "https://i.ytimg.com/vi/niedg4NfA5g/maxresdefault.jpg" },
+            { "nome": "Puxada curvada", "series": 4, "repeticoes": 12, "img": "https://www.hipertrofia.org/blog/wp-content/uploads/2014/11/remada-curvada-1.jpg" },
+            { "nome": "T-bar Row", "series": 4, "repeticoes": 12, "img": "https://cdn.shopify.com/s/files/1/1633/7705/articles/t_bar_row_2000x.jpg?v=1652354255" },
+            { "nome": "Crucifixo inverso máquina", "series": 4, "repeticoes": 12, "img": "https://cdn.fisiculturismo.com.br/monthly_2017_03/crucifixo-invertido-na-maquina-pegada-pronada-final.jpg.39a9935935798d40f7fdeebd4947d0ca.jpg" },
+            { "nome": "Rosca Scott", "series": 4, "repeticoes": 12, "img": "https://blog.lionfitness.com.br/wp-content/uploads/2018/11/rosca-scott-equipamentos-lion-fitness.jpg" },
+            { "nome": "Rosca alternada", "series": 4, "repeticoes": 12, "img": "http://conteudo.imguol.com.br/c/entretenimento/19/2019/03/07/rosca-direta-1551966289593_v2_1254x836.jpg" }
+        ]
+    },
+    {
+        "treino": "B",
+        "area": "Peito, ombro e tríceps",
+        "treinos": [
+            { "nome": "Voador", "series": 4, "repeticoes": 12, "img": "https://i0.wp.com/corpodirect.com.br/wp-content/uploads/2022/09/55peck-deck-scaled.jpg?ssl=1" },
+            { "nome": "Supino inclinado", "series": 4, "repeticoes": 12, "img": "https://i.ytimg.com/vi/oZjIQN0YMX0/maxresdefault.jpg" },
+            { "nome": "Paralela aberta", "series": 4, "repeticoes": 12, "img": "http://www.hipertrofia.org/blog/wp-content/uploads/2009/11/paralelas-1.jpg" },
+            { "nome": "Desenvolvimento máquina", "series": 4, "repeticoes": 12, "img": "https://i.ytimg.com/vi/XrOSyMjZqkg/maxresdefault.jpg" },
+            { "nome": "Elevação lateral", "series": 4, "repeticoes": 12, "img": "https://hipertrofia.mgpersonall.com/wp-content/uploads/2022/08/analise-cinesiologica-da-elevacao-lateral-com-halteres.jpg" },
+            { "nome": "Elevação lateral polia", "series": 4, "repeticoes": 12, "img": "https://i.ytimg.com/vi/5xAn7PeLeiQ/maxresdefault.jpg" },
+            { "nome": "Encolhimento", "series": 4, "repeticoes": 12, "img": "https://i.ytimg.com/vi/BrwUPSLC_hE/maxresdefault.jpg" },
+            { "nome": "Tríceps corda", "series": 4, "repeticoes": 12, "img": "https://st2.depositphotos.com/1845763/9472/i/600/depositphotos_94726090-stock-photo-triceps-rope-pushdown.jpg" },
+            { "nome": "Tríceps francês", "series": 4, "repeticoes": 12, "img": "https://portalvidalivre.com/uploads/article/image/456/tr%C3%ADceps_franc%C3%AAs_thumb.jpg" }
+        ]
+    },
+    {
+        "treino": "C",
+        "area": "Quadríceps",
+        "treinos": [
+            { "nome": "Cadeira adutora", "series": 4, "repeticoes": 12, "img": "https://portalvidalivre.com/uploads/content/image/13425/AdobeStock_208107588.jpeg" },
+            { "nome": "Hack squat", "series": 4, "repeticoes": 12, "img": "https://cdn.shopify.com/s/files/1/1633/7705/articles/hack_squat_alternative_2000x.jpg?v=1648368427" },
+            { "nome": "Cadeira extensora", "series": 4, "repeticoes": 12, "img": "https://vitat.com.br/wp-content/uploads/2022/02/shutterstock_1174503379-1-scaled.jpg" },
+            { "nome": "Búlgaro", "series": 4, "repeticoes": 12, "img": "https://grandeatleta.com.br/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FHIZ5co5hPjQ%2F0.jpg" },
+            { "nome": "Mesa flexora", "series": 4, "repeticoes": 12, "img": "http://conteudo.imguol.com.br/c/entretenimento/a4/2019/11/18/mesa-flexora-1574088009594_v2_900x506.jpg" }
+        ]
+    },
+    {
+        "treino": "D",
+        "area": "Costas e bíceps",
+        "treinos": [
+            { "nome": "Puxada aberta", "series": 4, "repeticoes": 12, "img": "https://www.fiqueinforma.com/wp-content/uploads/2008/12/puxadas.jpg" },
+            { "nome": "Remada máquina", "series": 4, "repeticoes": 12, "img": "http://conteudo.imguol.com.br/c/entretenimento/f9/2019/08/27/remada-na-maquina-1566927337178_v2_1036x685.jpg" },
+            { "nome": "Puxada JPG", "series": 4, "repeticoes": 12, "img": "https://blog.gsuplementos.com.br/wp-content/uploads/2022/09/puxada-alta.jpg" },
+            { "nome": "Remada baixa", "series": 4, "repeticoes": 12, "img": "https://blog.lionfitness.com.br/wp-content/uploads/2019/01/Blog-75-1.jpg" },
+            { "nome": "Crucifixo inverso polia", "series": 4, "repeticoes": 12, "img": "https://i.ytimg.com/vi/H_c6CU0SKjU/frame0.jpg" },
+            { "nome": "Rosca Scott", "series": 4, "repeticoes": 12, "img": "https://blog.lionfitness.com.br/wp-content/uploads/2018/11/rosca-scott-equipamentos-lion-fitness.jpg" },
+            { "nome": "Rosca barra W", "series": 4, "repeticoes": 12, "img": "https://hipertrofia.mgpersonall.com/wp-content/uploads/2022/08/rosca-direta-com-barra-reta-ou-barra-w-1.jpg" }
+        ]
+    },
+    {
+        "treino": "E",
+        "area": "Peito, ombro e tríceps",
+        "treinos": [
+            { "nome": "Voador", "series": 4, "repeticoes": 12, "img": "https://i0.wp.com/corpodirect.com.br/wp-content/uploads/2022/09/55peck-deck-scaled.jpg?ssl=1" },
+            { "nome": "Supino inclinado", "series": 4, "repeticoes": 12, "img": "https://i.ytimg.com/vi/oZjIQN0YMX0/maxresdefault.jpg" },
+            { "nome": "Paralela", "series": 4, "repeticoes": 12, "img": "https://ae01.alicdn.com/kf/Hf0c215e90ec04b068fcb71c44dfcbc2aR/Barra-paralela-nica-multifuncional-barras-paralelas-para-exerc-cios-equipamento-resistente-barra-paralela-para-exerc-cios.jpg_Q90.jpg_.webp" },
+            { "nome": "Desenvolvimento máquina", "series": 4, "repeticoes": 12, "img": "https://i.ytimg.com/vi/XrOSyMjZqkg/maxresdefault.jpg" },
+            { "nome": "Elevação lateral halter", "series": 4, "repeticoes": 12, "img": "https://i.ytimg.com/vi/W5hRdgwEoEA/maxresdefault.jpg" },
+            { "nome": "Elevação lateral polia", "series": 4, "repeticoes": 12, "img": "https://i.ytimg.com/vi/5xAn7PeLeiQ/maxresdefault.jpg" },
+            { "nome": "Encolhimento", "series": 4, "repeticoes": 12, "img": "https://i.ytimg.com/vi/BrwUPSLC_hE/maxresdefault.jpg" },
+            { "nome": "Tríceps corda", "series": 4, "repeticoes": 12, "img": "https://st2.depositphotos.com/1845763/9472/i/600/depositphotos_94726090-stock-photo-triceps-rope-pushdown.jpg" },
+            { "nome": "Tríceps francês polia", "series": 4, "repeticoes": 12, "img": "https://portalvidalivre.com/uploads/article/image/456/tr%C3%ADceps_franc%C3%AAs_thumb.jpg" }
+        ]
+    },
+    {
+        "treino": "F",
+        "area": "Posterior",
+        "treinos": [
+            { "nome": "Terra", "series": 4, "repeticoes": 12, "img": "https://www.espaco360med.com.br/images/blog/main/large/10-fatos-que-farao-voce-incluir-o-levantamento-terra-no-seu-treino-.jpg" },
+            { "nome": "Stiff", "series": 4, "repeticoes": 12, "img": "https://www.smartfit.com.br/news/wp-content/uploads/2021/09/stiff-01.jpg" },
+            { "nome": "Mesa flexora", "series": 4, "repeticoes": 12, "img": "http://conteudo.imguol.com.br/c/entretenimento/a4/2019/11/18/mesa-flexora-1574088009594_v2_900x506.jpg" },
+            { "nome": "Leg press", "series": 4, "repeticoes": 12, "img": "https://vitat.com.br/wp-content/uploads/2022/02/shutterstock_210819172-1-scaled.jpg" },
+            { "nome": "Cadeira abdutora", "series": 4, "repeticoes": 12, "img": "https://portalvidalivre.com/uploads/content/image/13425/AdobeStock_208107588.jpeg" }
+        ]
+    }
+]

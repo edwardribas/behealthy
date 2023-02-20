@@ -1,0 +1,56 @@
+[
+    {
+        "refeicao": "Café da manhã",
+        "pratos": [
+            {
+                "nome": "Água",
+                "quantidade": "300ml"
+            },
+            {
+                "nome": "Vitamina de frutas",
+                "ingredientes": [
+                    "1 banana congelada",
+                    "6 morangos",
+                    "1 colher de sopa de abacate",
+                    "200ml de leite",
+                    "1 colher de sopa de farelo de sementes / 1 colher de sopa de farelo de aveia"
+                ]
+            },
+            {
+                "nome": "Vitamina de chocolate em pó, banana e leite",
+                "ingredientes": [
+                    "1 banana congelada",
+                    "1 colher de sopa de chocolate em pó (50% cacau)",
+                    "1 colher de sopa de abacate",
+                    "200ml de leite",
+                    "1 colher de sopa de farelo de aveia"
+                ]
+            }
+        ]
+    },
+    {
+        "refeicao": "Lanche da manhã",
+        "pratos": [
+            {
+                "nome": "Sanduíche",
+                "quantidade": "1/2",
+                "ingredientes": [
+                    "Pão de forma integral / pão árabe integral / pão francês integral",
+                    "Queijo muçarela / minas padrão / minas frescal ou 1 colher de sopa de creme de ricota",
+                    "Pasta de ovo cozido com frango desfiado / pasta de atum / pasta de salpicão de frango"
+                ]
+            },
+            {
+                "nome": "Batata doce"
+            },
+            {
+                "nome": "Panqueca de banana",
+                "ingredientes": [
+                    "1 ovo",
+                    "1 banana amassada",
+                    "1 colher de sopa de aveia em flocos + canela"
+                ]
+            }
+        ]
+    }
+]
