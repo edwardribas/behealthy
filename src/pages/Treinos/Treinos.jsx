@@ -13,7 +13,7 @@ const TreinoItem = ({
 }) => {
     return (
         <div className={styles.treinoItem}>
-            <img src={img}/>
+            <img src={img} alt="Exercício"/>
 
             <div>
                 <h5>{nome}</h5>
