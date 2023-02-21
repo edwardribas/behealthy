@@ -1,0 +1,20 @@
+{
+    "name": "Behealthy",
+    "description": "Treino e alimentação de uma forma organizada.",
+    "theme_color": "#212121",
+    "start_url": ".",
+    "background_color": "#212121",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "./favicon250.png",
+            "sizes": "250x250",
+            "type": "image/png"
+        },
+        {
+            "src": "./favicon512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

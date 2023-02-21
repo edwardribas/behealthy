@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./favicon.png">
+
     <!-- General -->
     <title>Behealthy</title>
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.svg">
@@ -15,5 +19,14 @@
         Você precisa estar com o JavaScript habilitado para acessar esta página.
     </noscript>
     <div id="root"></div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.onload = () => {
+                navigator.serviceWorker.register('./serviceWorker.js')
+                    .then(reg => console.log("Service Worker registered!"))
+                    .catch(err => console.error(`Service Worker failed! (${err})`))
+            }
+        }
+    </script>
 </body>
 </html>

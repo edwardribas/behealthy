@@ -4,24 +4,7 @@ import { Titulo } from '../../components/Titulo/Titulo';
 import { useState } from 'react';
 import treinosJson from './Treinos.json';
 import { OptionViewer } from '../../components/OptionViewer/OptionViewer';
-
-const TreinoItem = ({
-    img,
-    nome,
-    series,
-    repeticoes,
-}) => {
-    return (
-        <div className={styles.treinoItem}>
-            <img src={img} alt="Exercício"/>
-
-            <div>
-                <h5>{nome}</h5>
-                <p>{series} séries, {repeticoes} repetições</p>
-            </div>
-        </div>
-    )
-}
+import { TreinoItem } from './TreinoItem/TreinoItem';
 
 export const Treinos = () => {
     const treinos = ['Treino A', 'Treino B', 'Treino C', 'Treino D', 'Treino E', 'Treino F'];

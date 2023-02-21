@@ -2,29 +2,4 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-
-    .treinoItem {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-
-        img {
-            width: 60px;
-            height: 60px;
-            border-radius: 14px;
-        }
-
-        h5 {
-            color: #fff;
-            font-weight: 400;
-            font-size: .97rem;
-            margin-bottom: 2px;
-        }
-
-        p {
-            font-weight: 300;
-            color: #a1a1a1;
-            font-size: .97rem;
-        }
-    }
 }

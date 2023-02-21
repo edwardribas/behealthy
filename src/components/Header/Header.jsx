@@ -29,17 +29,18 @@ export const Header = () => {
                 </p>
             </div>
 
-            <div className={isHeaderOpen ? `${styles.menu} ${styles.active}` : styles.menu}>
+            <div
+                className={isHeaderOpen ? `${styles.menu} ${styles.active}` : styles.menu}
+                onClick={() => setIsHeaderOpen(false)}
+            >
                 <NavLink
                     to="/"
-                    onClick={() => setIsHeaderOpen(false)}
                     className={({isActive}) => isActive ? styles.active : undefined}
                 >
                     Treinos
                 </NavLink>
                 <NavLink
                     to="alimentacao"
-                    onClick={() => setIsHeaderOpen(false)}
                     className={({isActive}) => isActive ? styles.active : undefined}
                 >
                     Alimentação
