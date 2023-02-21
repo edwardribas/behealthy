@@ -1,6 +1,9 @@
 .optionViewer {
-    position: relative;
-    margin-bottom: 45px;
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+    background-color: #212121;
+    margin-bottom: 40px;
     width: 100%;
     user-select: none;
 
@@ -42,6 +45,7 @@
         }
 
         span {
+            cursor: pointer;
             border-radius: 6px;
             color: #797979;
             font-weight: 400;
@@ -56,5 +60,19 @@
                 color: #C8C8C8;
             }
         }
+    }
+
+    .blur {
+        position: absolute;
+        height: 170px;
+        pointer-events: none;
+        bottom: -30px;
+        left: -20px;
+        right: -20px;
+        width: 110%;
+        filter: blur(6px);
+        background-color: #212121;
+        z-index: -1;
+
     }
 }

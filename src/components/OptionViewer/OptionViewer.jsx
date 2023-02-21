@@ -41,6 +41,9 @@ export const OptionViewer = ({
                     </div>
                 </div>
             )}
+            
+            <div className={styles.blur}>
+            </div>
         </div>
     )
 }

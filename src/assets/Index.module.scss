@@ -19,6 +19,17 @@ html, body {
 body {
     background-color: #212121;
     color: rgb(240, 240, 240);
-    background-image: url('./img/blur-ellipse-bg.svg');
+    // background-image: url('./img/blur-ellipse-bg.svg');
     background-repeat: no-repeat;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 30px;
+        border: 2px solid #212121;
+        background-color: #343434;
+    }
 }
