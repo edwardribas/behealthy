@@ -19,6 +19,7 @@ export const TreinoItem = ({
                 <img
                     src={imageSource}
                     className={img && viewImage ? `${styles.active} ${styles.imgView}` : styles.imgView}
+                    alt="Exercício"
                 />
             </div>
             <div className={styles.treinoItem}>
