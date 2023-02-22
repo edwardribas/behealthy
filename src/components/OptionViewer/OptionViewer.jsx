@@ -33,6 +33,7 @@ export const OptionViewer = ({
                             className={el === currentOption ? styles.active : undefined}
                             key={index}
                             onClick={() => {
+                                navigator.vibrate(20);
                                 changeHandler(el, index);
                                 window.scrollTo({
                                     left: 0,

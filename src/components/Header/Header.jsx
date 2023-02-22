@@ -31,7 +31,10 @@ export const Header = () => {
 
             <div
                 className={isHeaderOpen ? `${styles.menu} ${styles.active}` : styles.menu}
-                onClick={() => setIsHeaderOpen(false)}
+                onClick={() => {
+                    setIsHeaderOpen(false);
+                    navigator.vibrate(20);
+                }}
             >
                 <NavLink
                     to="/"
@@ -52,7 +55,10 @@ export const Header = () => {
                     <img src={Logotipo} alt="Logotipo"/>
                 </Link>
 
-                <span onClick={() => setIsHeaderOpen(!isHeaderOpen)}>
+                <span onClick={() => {
+                    navigator.vibrate(20);
+                    setIsHeaderOpen(!isHeaderOpen);
+                }}>
                     <HiOutlineBars3BottomRight/>
                 </span>
             </header>
