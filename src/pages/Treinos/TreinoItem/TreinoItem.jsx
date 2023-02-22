@@ -13,7 +13,10 @@ export const TreinoItem = ({
     return (
         <div>
             <div
-                onClick={() => setViewImage(false)}
+                onClick={() => {
+                    navigator.vibrate(20)
+                    setViewImage(false)
+                }}
                 className={viewImage && img ? `${styles.backdrop} ${styles.active}` : styles.backdrop}
             >
                 <img
@@ -24,7 +27,10 @@ export const TreinoItem = ({
             </div>
             <div className={styles.treinoItem}>
                 <img
-                    onClick={() => setViewImage(true)}
+                    onClick={() => {
+                        navigator.vibrate(20)
+                        setViewImage(true)
+                    }}
                     src={imageSource}
                     alt="Exercício"
                 />

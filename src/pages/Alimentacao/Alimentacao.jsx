@@ -5,11 +5,58 @@ import { useState } from 'react';
 import alimentacaoJson from './Alimentacao.json';
 import { OptionViewer } from '../../components/OptionViewer/OptionViewer';
 
+const initialState = {
+    show: false,
+    nome: '',
+    quantidade: '',
+    ingredientes: [],
+}
+
 const AlimentacaoItem = ({
+    prato,
+    setInfo
 }) => {
     return (
-        <div className={styles.alimentacaoItem}>
+        <div
+            className={styles.alimentacaoItem}
+            onClick={() => {
+                navigator.vibrate(20);
+                setInfo({
+                    show: true,
+                    toggleShow: setInfo,
+                    prato
+                })}
+        }
+        >
+            {prato.img && (
+                <img
+                    src={require(`../../assets/img/refeicoes/${prato.img}.jpg`)}
+                    alt="Refeição"
+                />
+            )}
+            <h2>{prato.nome || 'Prato sem nome'}</h2>
+            <div className={styles.blur}></div>
+        </div>
+    )
+}
 
+const AlimentacaoInfoModal = ({
+    show,
+    toggleShow,
+    prato
+}) => {
+    
+    return (
+        <div
+            className={show ? `${styles.alimentacaoModal} ${styles.active}` : styles.alimentacaoModal}
+            onClick={() => {
+                toggleShow(initialState);
+                navigator.vibrate(20);
+            }}
+        >
+            {prato && (
+                <p>{prato.nome}</p>
+            )}
         </div>
     )
 }
@@ -20,6 +67,8 @@ export const Alimentacao = () => {
         'Almoço', 'Lanche da tarde',
         'Jantar', 'Lanche da noite'
     ];
+
+    const [clickedRefeicaoInfo, setClickedRefeicaoInfo] = useState(initialState)
     const [refeicaoIndex, setRefeicao] = useState(0)
     const refeicaoInfo = alimentacaoJson[refeicaoIndex]?.pratos;
 
@@ -34,26 +83,26 @@ export const Alimentacao = () => {
                 optionChangeHandler={setRefeicao}
             />
 
-            <div className={styles.alimentacaoWrapper}>
-                {refeicaoInfo
-                    ? refeicaoInfo.map(item => (
-                        <div style={{marginBottom: 30}}>
-                            <p>Nome: {item.nome}</p>
-                            {item.quantidade && (
-                                <p>Quantidade: {item.quantidade}</p>
-                            )}
+            <AlimentacaoInfoModal
+                show={clickedRefeicaoInfo.show}
+                toggleShow={setClickedRefeicaoInfo}
+                nome={clickedRefeicaoInfo.nome}
+                quantidade={clickedRefeicaoInfo.quantidade}
+                ingredientes={clickedRefeicaoInfo.ingredientes}
+            />
 
-                            {item.ingredientes.length > 0 && (
-                                <ul>
-                                    {item.ingredientes.map(ingr => (
-                                        <li>{ingr}</li>
-                                    ))}
-                                </ul>
-                            )}
-                        </div>
-                    ))
-                    : <p>Nada encontrado.</p>
-                }
+            <div className={styles.wrapper}>
+                <div className={styles.alimentos}>
+                    {refeicaoInfo?.length > 0 && (
+                        refeicaoInfo.map((prato, i) => (
+                            <AlimentacaoItem
+                                key={i}
+                                setInfo={setClickedRefeicaoInfo}
+                                prato={prato}
+                            />
+                        ))
+                    )}
+                </div>
             </div>
 
         </Container>

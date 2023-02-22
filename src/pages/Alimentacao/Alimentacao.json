@@ -5,11 +5,61 @@
             {
                 "nome": "Água",
                 "quantidade": "300ml",
+                "img": "agua",
                 "ingredientes": []
             },
             {
                 "nome": "Vitamina de frutas",
                 "quantidade": "",
+                "img": "vitamina-frutas",
+                "ingredientes": [
+                    "1 banana congelada",
+                    "6 morangos",
+                    "1 colher de sopa de abacate",
+                    "200ml de leite",
+                    "1 colher de sopa de farelo de sementes / 1 colher de sopa de farelo de aveia"
+                ]
+            },
+            {
+                "nome": "Vitamina de frutas",
+                "quantidade": "",
+                "img": "vitamina-frutas",
+                "ingredientes": [
+                    "1 banana congelada",
+                    "6 morangos",
+                    "1 colher de sopa de abacate",
+                    "200ml de leite",
+                    "1 colher de sopa de farelo de sementes / 1 colher de sopa de farelo de aveia"
+                ]
+            },
+            {
+                "nome": "Vitamina de frutas",
+                "quantidade": "",
+                "img": "vitamina-frutas",
+                "ingredientes": [
+                    "1 banana congelada",
+                    "6 morangos",
+                    "1 colher de sopa de abacate",
+                    "200ml de leite",
+                    "1 colher de sopa de farelo de sementes / 1 colher de sopa de farelo de aveia"
+                ]
+            },
+            {
+                "nome": "Vitamina de frutas",
+                "quantidade": "",
+                "img": "vitamina-frutas",
+                "ingredientes": [
+                    "1 banana congelada",
+                    "6 morangos",
+                    "1 colher de sopa de abacate",
+                    "200ml de leite",
+                    "1 colher de sopa de farelo de sementes / 1 colher de sopa de farelo de aveia"
+                ]
+            },
+            {
+                "nome": "Vitamina de frutas",
+                "quantidade": "",
+                "img": "vitamina-frutas",
                 "ingredientes": [
                     "1 banana congelada",
                     "6 morangos",
@@ -21,40 +71,13 @@
             {
                 "nome": "Vitamina de chocolate em pó, banana e leite",
                 "quantidade": "",
+                "img": "vitamina-chocolate-cacau",
                 "ingredientes": [
                     "1 banana congelada",
                     "1 colher de sopa de chocolate em pó (50% cacau)",
                     "1 colher de sopa de abacate",
                     "200ml de leite",
                     "1 colher de sopa de farelo de aveia"
-                ]
-            }
-        ]
-    },
-    {
-        "refeicao": "Lanche da manhã",
-        "pratos": [
-            {
-                "nome": "Sanduíche",
-                "quantidade": "1/2",
-                "ingredientes": [
-                    "Pão de forma integral / pão árabe integral / pão francês integral",
-                    "Queijo muçarela / minas padrão / minas frescal ou 1 colher de sopa de creme de ricota",
-                    "Pasta de ovo cozido com frango desfiado / pasta de atum / pasta de salpicão de frango"
-                ]
-            },
-            {
-                "nome": "Batata doce",
-                "quantidade": "",
-                "ingredientes": []
-            },
-            {
-                "nome": "Panqueca de banana",
-                "quantidade": "1",
-                "ingredientes": [
-                    "1 ovo",
-                    "1 banana amassada",
-                    "1 colher de sopa de aveia em flocos + canela"
                 ]
             }
         ]
