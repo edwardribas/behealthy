@@ -18,8 +18,7 @@ const routes = [
             },
             {
                 path: "alimentacao",
-                element: <Treinos/>
-                // element: <Alimentacao/>,
+                element: <Treinos/>,
             },
             {
                 path: "*",

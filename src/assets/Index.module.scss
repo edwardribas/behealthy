@@ -19,7 +19,7 @@ html, body {
 body {
     background-color: #212121;
     color: rgb(240, 240, 240);
-    // background-image: url('./img/blur-ellipse-bg.svg');
+    overflow-x: hidden;
     background-repeat: no-repeat;
 
     &::-webkit-scrollbar {

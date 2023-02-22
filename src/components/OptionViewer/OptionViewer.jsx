@@ -32,7 +32,14 @@ export const OptionViewer = ({
                         <span
                             className={el === currentOption ? styles.active : undefined}
                             key={index}
-                            onClick={() => changeHandler(el, index)}
+                            onClick={() => {
+                                changeHandler(el, index);
+                                window.scrollTo({
+                                    left: 0,
+                                    top: 75,
+                                    behavior: 'smooth'
+                                });
+                            }}
                         >
                             {el}
                         </span>

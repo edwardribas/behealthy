@@ -4,10 +4,12 @@
         "pratos": [
             {
                 "nome": "Água",
-                "quantidade": "300ml"
+                "quantidade": "300ml",
+                "ingredientes": []
             },
             {
                 "nome": "Vitamina de frutas",
+                "quantidade": "",
                 "ingredientes": [
                     "1 banana congelada",
                     "6 morangos",
@@ -18,6 +20,7 @@
             },
             {
                 "nome": "Vitamina de chocolate em pó, banana e leite",
+                "quantidade": "",
                 "ingredientes": [
                     "1 banana congelada",
                     "1 colher de sopa de chocolate em pó (50% cacau)",
@@ -41,10 +44,13 @@
                 ]
             },
             {
-                "nome": "Batata doce"
+                "nome": "Batata doce",
+                "quantidade": "",
+                "ingredientes": []
             },
             {
                 "nome": "Panqueca de banana",
+                "quantidade": "1",
                 "ingredientes": [
                     "1 ovo",
                     "1 banana amassada",

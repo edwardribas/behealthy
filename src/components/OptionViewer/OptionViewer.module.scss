@@ -66,7 +66,7 @@
         }
     }
 
-    .blur {
+    .blur:not(:first-of-type) {
         position: absolute;
         height: 170px;
         pointer-events: none;
@@ -77,6 +77,5 @@
         filter: blur(6px);
         background-color: #212121;
         z-index: -1;
-
     }
 }

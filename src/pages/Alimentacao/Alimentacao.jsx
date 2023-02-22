@@ -21,20 +21,39 @@ export const Alimentacao = () => {
         'Jantar', 'Lanche da noite'
     ];
     const [refeicaoIndex, setRefeicao] = useState(0)
-    // const refeicaoInfo = alimentacaoJson[refeicaoIndex];
+    const refeicaoInfo = alimentacaoJson[refeicaoIndex]?.pratos;
 
     return (
         <Container className={styles.container}>
             <Titulo titulo='Alimentação'/>
 
-            {/* <OptionViewer
+            <OptionViewer
                 title="Refeição"
                 options={refeicoes}
-                currentOption={refeicoes[treinoIndex]}
+                currentOption={refeicoes[refeicaoIndex]}
                 optionChangeHandler={setRefeicao}
-            /> */}
+            />
 
             <div className={styles.alimentacaoWrapper}>
+                {refeicaoInfo
+                    ? refeicaoInfo.map(item => (
+                        <div style={{marginBottom: 30}}>
+                            <p>Nome: {item.nome}</p>
+                            {item.quantidade && (
+                                <p>Quantidade: {item.quantidade}</p>
+                            )}
+
+                            {item.ingredientes.length > 0 && (
+                                <ul>
+                                    {item.ingredientes.map(ingr => (
+                                        <li>{ingr}</li>
+                                    ))}
+                                </ul>
+                            )}
+                        </div>
+                    ))
+                    : <p>Nada encontrado.</p>
+                }
             </div>
 
         </Container>

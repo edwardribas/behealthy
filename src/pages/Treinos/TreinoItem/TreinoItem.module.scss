@@ -71,13 +71,15 @@ $desktopMinSize: 900px;
     max-width: 700px;
     height: auto;
     max-height: 500px;
+    transform: translateY(30px);
     border-radius: 30px;
     margin: auto;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .2s ease, visibility .2s ease;
-
+    transition: opacity .2s ease, visibility .2s ease, transform .25s ease;
+    
     &.active {
+        transform: translateY(0);
         opacity: 1;
         visibility: visible;
     }
