@@ -96,7 +96,7 @@ export const Alimentacao = () => {
     const refeicoes = [
         'Café da manhã', 'Lanche da manhã',
         'Almoço', 'Lanche da tarde',
-        'Jantar', 'Lanche da noite'
+        'Janta', 'Lanche da noite'
     ];
 
     const [clickedRefeicaoInfo, setClickedRefeicaoInfo] = useState(initialState)

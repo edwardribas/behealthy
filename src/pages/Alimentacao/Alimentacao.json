@@ -31,7 +31,114 @@
                     "200ml de leite",
                     "1 colher de sopa de farelo de aveia"
                 ]
+            },
+            {
+                "nome": "Sanduíche (lanche escolar)",
+                "quantidade": "1 ou 2",
+                "img": "",
+                "ingredientes": [
+                    "Pão de forma integral / pão árabe integral / pão francês integral",
+                    "Queijo muçarela / minas padrão ou 1 colher de sopa de creme de ricota",
+                    "Pasta de ovo cozido com frango desfiado"
+                ]
+            },
+            {
+                "nome": "Panqueca de Banana",
+                "quantidade": "-",
+                "img": "",
+                "ingredientes": [
+                    "1 ovo",
+                    "1 banana amassada",
+                    "1 colher de sopa de aveia em flocos e canela"
+                ]
+            },
+            {
+                "nome": "Pãozinho de frigideira",
+                "quantidade": "-",
+                "img": "",
+                "ingredientes": [
+                    "1 ovo",
+                    "2 colheres de sopa de farinha de aveia",
+                    "1 colher de chá de cúrcuma",
+                    "Sal",
+                    "1 colher de chá de azeite",
+                    "1 colher de chá de fermento em pó"
+                ]
+            },
+            {
+                "nome": "Panqueca",
+                "quantidade": "-",
+                "img": "",
+                "ingredientes": [
+                    "1 e 1/2 colher de sopa de farelo de aveia",
+                    "1 colher de sopa de iogurte natural",
+                    "1 ovo",
+                    "Essência de baunilha"
+                ]
+            },
+            {
+                "nome": "Aveioca",
+                "quantidade": "-",
+                "img": "",
+                "ingredientes": [
+                    "1 ovo",
+                    "2 colheres de sobremesa de aveia em flocos ou tapioca",
+                    "1 colher de água morna",
+                    "Sal",
+                    "Pimenta-do-reino",
+                    "Ervas secas desidratadas"
+                ]
             }
-        ]
+        ],
+        "refeicao": "Lanche da manhã",
+        "pratos": [
+            {
+                "nome": "Mix de Castanhas e Frutas Secas",
+                "quantidade": "-",
+                "img": "",
+                "ingredientes": [
+                    "2 castanhas do pará",
+                    "6 amêndoas",
+                    "2 castanhas de caju",
+                    "1 colher de sopa de amendoim",
+                    "2 ameixas secas",
+                    "2 damascos"
+                ]
+            },
+            {
+                "nome": "Mix de Frutas e Castanhas",
+                "quantidade": "-",
+                "img": "",
+                "ingredientes": [
+                    "1 fruta",
+                    "2 castanhas do pará",
+                    "10 amêndoas",
+                    "2 castanhas de cajú"
+                ]
+            }
+        ],
+        "refeicao": "Almoço",
+        "pratos": [
+            {
+                "nome": "Guia de refeição",
+                "quantidade": "-",
+                "img": "",
+                "ingredientes": [
+                    "Vegetais (50% do prato)",
+                    "Proteínas (25% do prato - ~120g)",
+                    "Carboidratos (25% do prato - 4 colheres de sopa)",
+                    "Grãos (6 colheres de sopa)",
+                    "1 fruta com fonte de vitamina C após a refeição",
+                    "Não ingerir líquidos durante e após 30 minutos a refeição",
+                    "Evitar açúcar de adição em geral"
+                ]
+            },
+        ],
+        "refeicao": "Lanche da tarde",
+        "pratos": [],
+        "refeicao": "Janta",
+        "pratos": [],
+        "refeicao": "Lanche da noite",
+        "pratos": [],
     }
 ]
