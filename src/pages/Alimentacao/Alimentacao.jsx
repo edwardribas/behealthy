@@ -7,9 +7,12 @@ import { OptionViewer } from '../../components/OptionViewer/OptionViewer';
 
 const initialState = {
     show: false,
-    nome: '',
-    quantidade: '',
-    ingredientes: [],
+    refeicao: '',
+    prato: {
+        nome: '',
+        quantidade: '',
+        ingredientes: [],
+    }
 }
 
 const AlimentacaoItem = ({
@@ -43,20 +46,47 @@ const AlimentacaoItem = ({
 const AlimentacaoInfoModal = ({
     show,
     toggleShow,
+    refeicao,
     prato
 }) => {
-    
     return (
         <div
-            className={show ? `${styles.alimentacaoModal} ${styles.active}` : styles.alimentacaoModal}
-            onClick={() => {
-                toggleShow(initialState);
-                navigator.vibrate(20);
-            }}
+            className={show
+                ? `${styles.alimentacaoModal} ${styles.active}`
+                : styles.alimentacaoModal
+            }
         >
-            {prato && (
-                <p>{prato.nome}</p>
-            )}
+            <div className={styles.modalWrapper}>
+                <h2>{prato.nome}</h2>
+
+                <div className={styles.info}>
+                    <span>{refeicao}</span>
+                    <span>Quantidade: {prato.quantidade}</span>
+                </div>
+
+                {prato?.ingredientes?.length > 0 && (
+                    <>
+                        <h2>Ingredientes</h2>
+                    
+                        <ul>
+                            {prato.ingredientes.map((ingrediente, i) => (
+                                <li key={i}>
+                                    {ingrediente}
+                                </li>
+                            ))}
+                        </ul>
+                    </>
+                )}
+
+                <button
+                    onClick={() => {
+                        toggleShow(initialState);
+                        navigator.vibrate(20);
+                    }}
+                >
+                    Fechar
+                </button>
+            </div>
         </div>
     )
 }
@@ -86,9 +116,8 @@ export const Alimentacao = () => {
             <AlimentacaoInfoModal
                 show={clickedRefeicaoInfo.show}
                 toggleShow={setClickedRefeicaoInfo}
-                nome={clickedRefeicaoInfo.nome}
-                quantidade={clickedRefeicaoInfo.quantidade}
-                ingredientes={clickedRefeicaoInfo.ingredientes}
+                prato={clickedRefeicaoInfo.prato}
+                refeicao={refeicoes[refeicaoIndex]}
             />
 
             <div className={styles.wrapper}>
