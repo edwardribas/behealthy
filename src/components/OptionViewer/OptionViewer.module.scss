@@ -1,11 +1,14 @@
+@import '../../assets/style/theme.scss';
+
 .optionViewer {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: $OViewer__zIndexOViewer;
     padding-top: 20px;
     background-color: #212121;
     margin-bottom: 40px;
     width: 100%;
+    scroll-snap-type: x mandatory;
     user-select: none;
 
     h3 {
@@ -17,6 +20,7 @@
 
     .options {
         display: flex;
+        scroll-snap-type: x proximity;
         overflow-x: scroll;
         gap: 10px;
         padding-right: 35px;
@@ -47,6 +51,7 @@
 
         span {
             cursor: pointer;
+            scroll-snap-align: center;
             border-radius: 6px;
             color: #797979;
             font-weight: 400;
@@ -77,6 +82,6 @@
         width: 110%;
         filter: blur(6px);
         background-color: #212121;
-        z-index: -1;
+        z-index: $OViewer__zIndexBlur;
     }
 }

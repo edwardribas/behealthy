@@ -2,75 +2,79 @@ import styles from './Alimentacao.module.scss';
 import { Container } from '../../components/Container/Container';
 import { Titulo } from '../../components/Titulo/Titulo';
 import { useState } from 'react';
-import alimentacaoJson from './Alimentacao.json';
+import refeicoesJSON from './Alimentacao.json';
 import { OptionViewer } from '../../components/OptionViewer/OptionViewer';
 
-const initialState = {
-    show: false,
-    refeicao: '',
-    prato: {
+const modalInitialState = {
+    showModal: false,
+    refeicaoAtual: '',
+    pratoInfo: {
         nome: '',
         quantidade: '',
         ingredientes: [],
     }
 }
 
+const refeicoes = [ 'Café da manhã', 'Lanche da manhã', 'Almoço', 'Lanche da tarde', 'Janta', 'Lanche da noite' ];
+
 const AlimentacaoItem = ({
-    prato,
-    setInfo
+    pratoInfo,
+    setModalInfo
 }) => {
     return (
         <div
             className={styles.alimentacaoItem}
             onClick={() => {
                 navigator.vibrate(20);
-                setInfo({
-                    show: true,
-                    toggleShow: setInfo,
-                    prato
+                setModalInfo({
+                    showModal: true,
+                    alternarShowModal: setModalInfo,
+                    pratoInfo
                 })}
         }
         >
             <img
-                src={prato.img
-                    ? require(`../../assets/img/refeicoes/${prato.img}.jpg`)
-                    : 'http://via.placeholder.com/150'
+                src={pratoInfo.img
+                    ? require(`../../assets/img/refeicoes/${pratoInfo.img}.jpg`)
+                    : 'https://media.discordapp.net/attachments/946460608839184466/1079435918815023194/image.png?width=1193&height=671'
                 }
                 alt="Refeição"
             />
-            <h2>{prato.nome || 'Prato sem nome'}</h2>
+            <h2>{pratoInfo.nome || 'Prato sem nome'}</h2>
             <div className={styles.blur}></div>
         </div>
     )
 }
 
 const AlimentacaoInfoModal = ({
-    show,
-    toggleShow,
-    refeicao,
-    prato
+    showModal,
+    alternarShowModal,
+    refeicaoAtual,
+    pratoInfo
 }) => {
     return (
         <div
-            className={show
+            className={showModal
                 ? `${styles.alimentacaoModal} ${styles.active}`
                 : styles.alimentacaoModal
             }
         >
             <div className={styles.modalWrapper}>
-                <h2>{prato.nome}</h2>
+                <h2>{pratoInfo.nome}</h2>
 
                 <div className={styles.info}>
-                    <span>{refeicao}</span>
-                    <span>Quantidade: {prato.quantidade}</span>
+                    <span>{refeicaoAtual}</span>
+                    <span>
+                        Quantidade: {pratoInfo.quantidade ? pratoInfo.quantidade : "Indefinida"}
+                    </span>
                 </div>
 
-                {prato?.ingredientes?.length > 0 && (
+                {pratoInfo?.ingredientes?.length > 0 && (
                     <>
                         <h2>Ingredientes</h2>
                     
                         <ul>
-                            {prato.ingredientes.map((ingrediente, i) => (
+                            {pratoInfo.ingredientes.map((ingrediente, i) => (
                                 <li key={i}>
                                     {ingrediente}
                                 </li>
@@ -81,7 +85,12 @@ const AlimentacaoInfoModal = ({
 
                 <button
                     onClick={() => {
-                        toggleShow(initialState);
+                        alternarShowModal({
+                            show: false,
+                            refeicaoAtual,
+                            pratoInfo
+                        });
+
                         navigator.vibrate(20);
                     }}
                 >
@@ -93,15 +102,9 @@ const AlimentacaoInfoModal = ({
 }
 
 export const Alimentacao = () => {
-    const refeicoes = [
-        'Café da manhã', 'Lanche da manhã',
-        'Almoço', 'Lanche da tarde',
-        'Janta', 'Lanche da noite'
-    ];
-
-    const [clickedRefeicaoInfo, setClickedRefeicaoInfo] = useState(initialState)
-    const [refeicaoIndex, setRefeicao] = useState(0)
-    const refeicaoInfo = alimentacaoJson[refeicaoIndex]?.pratos;
+    const [modalRefeicaoInfo, setModalRefeicaoInfo] = useState(modalInitialState);
+    const [refeicaoAtualIndex, setRefeicaoAtualIndex] = useState(0);
+    const refeicaoAtual = refeicoesJSON[refeicaoAtualIndex]?.pratos;
 
     return (
         <Container className={styles.container}>
@@ -110,25 +113,25 @@ export const Alimentacao = () => {
             <OptionViewer
                 title="Refeição"
                 options={refeicoes}
-                currentOption={refeicoes[refeicaoIndex]}
-                optionChangeHandler={setRefeicao}
+                currentOption={refeicoes[refeicaoAtualIndex]}
+                optionChangeHandler={setRefeicaoAtualIndex}
             />
 
             <AlimentacaoInfoModal
-                show={clickedRefeicaoInfo.show}
-                toggleShow={setClickedRefeicaoInfo}
-                prato={clickedRefeicaoInfo.prato}
-                refeicao={refeicoes[refeicaoIndex]}
+                showModal={modalRefeicaoInfo.showModal}
+                pratoInfo={modalRefeicaoInfo.pratoInfo}
+                alternarShowModal={setModalRefeicaoInfo}
+                refeicaoAtual={refeicoes[refeicaoAtualIndex]}
             />
 
             <div className={styles.wrapper}>
                 <div className={styles.alimentos}>
-                    {refeicaoInfo?.length > 0 && (
-                        refeicaoInfo.map((prato, i) => (
+                    {refeicaoAtual?.length > 0 && (
+                        refeicaoAtual.map((pratoInfo, i) => (
                             <AlimentacaoItem
                                 key={i}
-                                setInfo={setClickedRefeicaoInfo}
-                                prato={prato}
+                                setModalInfo={setModalRefeicaoInfo}
+                                pratoInfo={pratoInfo}
                             />
                         ))
                     )}

@@ -7,22 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- PWA -->
-    <link rel="manifest" href="./manifest.json">
-    <link rel="apple-touch-icon" href="./favicon.png">
+    <link rel="manifest" href="%PUBLIC_URL%/assets/pwa/manifest.json">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/img/favicon250.png">
 
     <!-- General -->
     <title>Behealthy</title>
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.svg">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/assets/img/favicon250.png">
 </head>
 <body>
     <noscript>
         Você precisa estar com o JavaScript habilitado para acessar esta página.
     </noscript>
+
     <div id="root"></div>
+    
     <script>
+        // Instalação do Service Worker (Progressive Web Application)
         if ('serviceWorker' in navigator) {
             window.onload = () => {
-                navigator.serviceWorker.register('./serviceWorker.js')
+                navigator.serviceWorker.register('%PUBLIC_URL%/assets/pwa/serviceWorker.js')
                     .then(reg => console.log("Service Worker registered!"))
                     .catch(err => console.error(`Service Worker failed! (${err})`))
             }

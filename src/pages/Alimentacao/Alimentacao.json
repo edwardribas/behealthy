@@ -35,7 +35,7 @@
             {
                 "nome": "Sanduíche (lanche escolar)",
                 "quantidade": "1 ou 2",
-                "img": "",
+                "img": "sanduiche",
                 "ingredientes": [
                     "Pão de forma integral / pão árabe integral / pão francês integral",
                     "Queijo muçarela / minas padrão ou 1 colher de sopa de creme de ricota",
@@ -44,8 +44,8 @@
             },
             {
                 "nome": "Panqueca de Banana",
-                "quantidade": "-",
-                "img": "",
+                "quantidade": "",
+                "img": "panqueca-banana",
                 "ingredientes": [
                     "1 ovo",
                     "1 banana amassada",
@@ -54,8 +54,8 @@
             },
             {
                 "nome": "Pãozinho de frigideira",
-                "quantidade": "-",
-                "img": "",
+                "quantidade": "",
+                "img": "paozinho-frigideira",
                 "ingredientes": [
                     "1 ovo",
                     "2 colheres de sopa de farinha de aveia",
@@ -67,8 +67,8 @@
             },
             {
                 "nome": "Panqueca",
-                "quantidade": "-",
-                "img": "",
+                "quantidade": "",
+                "img": "panqueca",
                 "ingredientes": [
                     "1 e 1/2 colher de sopa de farelo de aveia",
                     "1 colher de sopa de iogurte natural",
@@ -78,8 +78,8 @@
             },
             {
                 "nome": "Aveioca",
-                "quantidade": "-",
-                "img": "",
+                "quantidade": "",
+                "img": "aveioca",
                 "ingredientes": [
                     "1 ovo",
                     "2 colheres de sobremesa de aveia em flocos ou tapioca",
@@ -89,13 +89,15 @@
                     "Ervas secas desidratadas"
                 ]
             }
-        ],
+        ]
+    },
+    {
         "refeicao": "Lanche da manhã",
         "pratos": [
             {
                 "nome": "Mix de Castanhas e Frutas Secas",
-                "quantidade": "-",
-                "img": "",
+                "quantidade": "",
+                "img": "mix-castanhas-frutas-secas",
                 "ingredientes": [
                     "2 castanhas do pará",
                     "6 amêndoas",
@@ -107,8 +109,8 @@
             },
             {
                 "nome": "Mix de Frutas e Castanhas",
-                "quantidade": "-",
-                "img": "",
+                "quantidade": "",
+                "img": "mix-castanhas",
                 "ingredientes": [
                     "1 fruta",
                     "2 castanhas do pará",
@@ -116,13 +118,15 @@
                     "2 castanhas de cajú"
                 ]
             }
-        ],
+        ]
+    },
+    {
         "refeicao": "Almoço",
         "pratos": [
             {
                 "nome": "Guia de refeição",
-                "quantidade": "-",
-                "img": "",
+                "quantidade": "",
+                "img": "guia-almoco",
                 "ingredientes": [
                     "Vegetais (50% do prato)",
                     "Proteínas (25% do prato - ~120g)",
@@ -132,13 +136,73 @@
                     "Não ingerir líquidos durante e após 30 minutos a refeição",
                     "Evitar açúcar de adição em geral"
                 ]
-            },
-        ],
+            }
+        ]
+    },
+    {
         "refeicao": "Lanche da tarde",
-        "pratos": [],
+        "pratos": [
+            {
+                "nome": "Lanche mais completo",
+                "quantidade": "",
+                "img": "lanche-tarde-1",
+                "ingredientes": [
+                    "1 copo de suco de maracujá / limonada / bebida láctea proteica / vitaminas da manhã",
+                    "2 fatias de pão 100% integral / pão árabe / qualquer outra marca",
+                    "Algum recheio para o sanduíche"
+                ]
+            },
+            {
+                "nome": "Lanche mais rápido (Opção 1)",
+                "quantidade": "",
+                "img": "lanche-tarde-2",
+                "ingredientes": [
+                    "1 ovo cozido",
+                    "1 iogurte natural integral",
+                    "1 banana com canela em pó e farelo de aveia"
+                ]
+            },
+            {
+                "nome": "Lanche mais rápido (Opção 2)",
+                "quantidade": "",
+                "img": "lanche-tarde-3",
+                "ingredientes": [
+                    "Bebida láctea proteica",
+                    "1 fatia de queijo branco com 1 pedaço de banana da terra",
+                    "1 fatia de bolo de banana"
+                ]
+            }
+        ]
+    },
+    {
         "refeicao": "Janta",
-        "pratos": [],
+        "pratos": [
+            {
+                "nome": "Guia de refeição",
+                "quantidade": "",
+                "img": "guia-janta",
+                "ingredientes": [
+                    "Repetir opções do almoço ou:",
+                    "Sopas de legumes ou leguminosas",
+                    "Omelete com 2 ovos + frango desfiado / Carne moída / Carne assada desfiada / Sardinha/atum em lata / Salpicão de frango",
+                    "Fazer opções de quiches com massa de grão de bico e rechear com cogumelos, palmito, aspargos, alho poró, cebola roxa etc; omeletes; panquecas"
+                ]
+            }
+        ]
+    },
+    {
         "refeicao": "Lanche da noite",
-        "pratos": [],
+        "pratos": [
+            {
+                "nome": "Ceia ou repetir lanches pequenos",
+                "quantidade": "",
+                "img": "lanche-noite",
+                "ingredientes": [
+                    "1 fruta (2 kiwis / 1 banana / 1 fatia de melão / 1 xícara de morango / 2 ameixas vermelhas / 1 maçã / 1 pêra)",
+                    "Iogurte natural integral / vitamina de leite / iogurte com fruta",
+                    "Mingau de aveia"
+                ]
+            }
+        ]
     }
 ]

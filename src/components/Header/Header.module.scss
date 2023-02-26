@@ -1,11 +1,7 @@
-$zIndexHeader: 1000;
-$zIndexMenu: 900;
-$zIndexBackdrop: 500;
-$zIndexDate: 150;
-$zIndexBlur: 50;
+@import '../../assets/style/theme.scss';
 
 .blur {
-    z-index: $zIndexBlur;
+    z-index: $Header__zIndexBlur;
     position: fixed;
     bottom: -30px;
     left: 0;
@@ -21,7 +17,7 @@ $zIndexBlur: 50;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    z-index: $zIndexHeader;
+    z-index: $Header__zIndexHeader;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -44,7 +40,7 @@ $zIndexBlur: 50;
 
 .menu {
     position: fixed;
-    z-index: $zIndexMenu;
+    z-index: $Header__zIndexMenu;
     user-select: none;
     opacity: 0;
     visibility: hidden;
@@ -86,7 +82,7 @@ $zIndexBlur: 50;
     pointer-events: none;
     position: fixed;
     bottom: 90px;
-    z-index: $zIndexDate;
+    z-index: $Header__zIndexDate;
     user-select: none;
     padding: 12px 16px;
     left: 50%;
@@ -107,7 +103,7 @@ $zIndexBlur: 50;
 .backdrop {
     position: fixed;
     height: 100%;
-    z-index: $zIndexBackdrop;
+    z-index: $Header__zIndexBackdrop;
     min-height: 100vh;
     inset: 0;
     background-color: rgba(33, 33, 33, .88);

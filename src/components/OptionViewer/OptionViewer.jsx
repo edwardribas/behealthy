@@ -25,21 +25,22 @@ export const OptionViewer = ({
                 <h3>{title}</h3>
             )}
 
-
             {options.length && (
                 <div className={styles.options}>
                     {options.map((el, index) => 
                         <span
                             className={el === currentOption ? styles.active : undefined}
                             key={index}
-                            onClick={() => {
-                                navigator.vibrate(20);
-                                changeHandler(el, index);
-                                window.scrollTo({
-                                    left: 0,
-                                    top: 75,
+                            onClick={(e) => {
+                                const element = e.target;
+                                element.parentNode.scroll({
+                                    left: element.offsetLeft - 100,
                                     behavior: 'smooth'
                                 });
+
+                                navigator.vibrate(20);
+                                changeHandler(el, index);
+                                window.scrollY > 75 && window.scrollTo({ top: 75 });
                             }}
                         >
                             {el}
