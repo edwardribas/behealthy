@@ -31,12 +31,13 @@ const AlimentacaoItem = ({
                 })}
         }
         >
-            {prato.img && (
-                <img
-                    src={require(`../../assets/img/refeicoes/${prato.img}.jpg`)}
-                    alt="Refeição"
-                />
-            )}
+            <img
+                src={prato.img
+                    ? require(`../../assets/img/refeicoes/${prato.img}.jpg`)
+                    : 'http://via.placeholder.com/150'
+                }
+                alt="Refeição"
+            />
             <h2>{prato.nome || 'Prato sem nome'}</h2>
             <div className={styles.blur}></div>
         </div>

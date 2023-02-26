@@ -8,6 +8,7 @@ $desktopMinSize: 900px;
     img {
         cursor: pointer;
         width: 75px;
+        user-select: none;
         height: 75px;
         object-fit: cover;
         border-radius: 14px;
@@ -45,6 +46,7 @@ $desktopMinSize: 900px;
 
 .backdrop {
     position: fixed;
+    user-select: none;
     height: 100%;
     display: flex;
     align-items: center;
