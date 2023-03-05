@@ -7,7 +7,7 @@ import { OptionViewer } from '../../components/OptionViewer/OptionViewer';
 import { TreinoItem } from './TreinoItem/TreinoItem';
 
 export const Treinos = () => {
-    const treinos = ['Treino A', 'Treino B', 'Treino C', 'Treino D', 'Treino E', 'Treino F'];
+    const treinos = ['Treino A', 'Treino B', 'Treino C'];
     const [treinoIndex, setTreino] = useState(0)
     const treinoInfo = treinosJson[treinoIndex];
 
@@ -29,6 +29,7 @@ export const Treinos = () => {
                         img={treino.img}
                         nome={treino.nome}
                         series={treino.series}
+                        tempo={treino.tempo}
                         repeticoes={treino.repeticoes}
                     />
                 ))}

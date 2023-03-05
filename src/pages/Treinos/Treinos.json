@@ -1,80 +1,42 @@
 [
     {
         "treino": "A",
-        "area": "Costas e bíceps",
+        "area": "Inferior",
         "treinos": [
-            { "nome": "Puxada aberta", "series": 4, "repeticoes": 12, "img": "puxada-aberta" },
-            { "nome": "Puxada unilateral", "series": 4, "repeticoes": 12, "img": "puxada-unilateral" },
-            { "nome": "Puxada curvada", "series": 4, "repeticoes": 12, "img": "puxada-curvada" },
-            { "nome": "T-bar Row", "series": 4, "repeticoes": 12, "img": "t-bar-row" },
-            { "nome": "Crucifixo inverso máquina", "series": 4, "repeticoes": 12, "img": "cfixo-inverso-maquina" },
-            { "nome": "Rosca Scott", "series": 4, "repeticoes": 12, "img": "rosca-scott" },
-            { "nome": "Rosca alternada", "series": 4, "repeticoes": 12, "img": "rosca-alternada" }
+            { "nome": "Esteira", "tempo": "10 minutos", "img": "esteira" },
+            { "nome": "Agachamento bola", "series": 4, "repeticoes": 12, "img": "agachamento-bola" },
+            { "nome": "Cadeira extensora", "series": 4, "repeticoes": 12, "img": "cadeira-extensora" },
+            { "nome": "Cadeira flexora", "series": 4, "repeticoes": 12, "img": "cadeira-flexora" },
+            { "nome": "Cadeira adutora", "series": 4, "repeticoes": 12, "img": "cadeira-adutora" },
+            { "nome": "Cadeira abdutora", "series": 4, "repeticoes": 12, "img": "cadeira-abdutora" },
+            { "nome": "Panturrilha na máquina", "series": 4, "repeticoes": 12, "img": "panturrilha-maquina" },
+            { "nome": "Bicicleta",  "tempo": "15 minutos", "img": "bicicleta" }
         ]
     },
     {
         "treino": "B",
-        "area": "Peito, ombro e tríceps",
+        "area": "Superior",
         "treinos": [
-            { "nome": "Voador", "series": 4, "repeticoes": 12, "img": "voador" },
-            { "nome": "Supino inclinado", "series": 4, "repeticoes": 12, "img": "supino-inclinado" },
-            { "nome": "Paralela aberta", "series": 4, "repeticoes": 12, "img": "paralela-aberta" },
-            { "nome": "Desenvolvimento máquina", "series": 4, "repeticoes": 12, "img": "desenvolvimento-maquina" },
+            { "nome": "Esteira", "tempo": "15 a 20 minutos", "img": "esteira" },
+            { "nome": "Supino inclinado articulado", "series": 4, "repeticoes": 12, "img": "supino-inclinado-articulado" },
+            { "nome": "Crucifixo máquina", "series": 4, "repeticoes": 12, "img": "cfixo-maquina" },
+            { "nome": "Pulley frente", "series": 4, "repeticoes": 12, "img": "pulley-frente" },
+            { "nome": "Remada máquina", "series": 4, "repeticoes": 12, "img": "remada-maquina" },
+            { "nome": "Rosca direta com halteres", "series": 4, "repeticoes": 12, "img": "rosca-direta-com-halteres" },
+            { "nome": "Tríceps pulley", "series": 4, "repeticoes": 12, "img": "triceps-corda" },
             { "nome": "Elevação lateral", "series": 4, "repeticoes": 12, "img": "elevacao-lateral" },
-            { "nome": "Elevação lateral polia", "series": 4, "repeticoes": 12, "img": "elevacao-lateral-polia" },
-            { "nome": "Encolhimento", "series": 4, "repeticoes": 12, "img": "encolhimento" },
-            { "nome": "Tríceps corda", "series": 4, "repeticoes": 12, "img": "triceps-corda" },
-            { "nome": "Tríceps francês", "series": 4, "repeticoes": 12, "img": "triceps-frances" }
+            { "nome": "Elíptico", "tempo": "15 a 20 minutos", "img": "eliptico" }
         ]
     },
     {
         "treino": "C",
-        "area": "Quadríceps",
+        "area": "Abdômen",
         "treinos": [
-            { "nome": "Cadeira adutora", "series": 4, "repeticoes": 12, "img": "cadeira-adutora" },
-            { "nome": "Hack squat", "series": 4, "repeticoes": 12, "img": "hack-squat" },
-            { "nome": "Cadeira extensora", "series": 4, "repeticoes": 12, "img": "cadeira-extensora" },
-            { "nome": "Búlgaro", "series": 4, "repeticoes": 12, "img": "bulgaro" },
-            { "nome": "Mesa flexora", "series": 4, "repeticoes": 12, "img": "mesa-flexora" }
-        ]
-    },
-    {
-        "treino": "D",
-        "area": "Costas e bíceps",
-        "treinos": [
-            { "nome": "Puxada aberta", "series": 4, "repeticoes": 12, "img": "puxada-aberta" },
-            { "nome": "Remada máquina", "series": 4, "repeticoes": 12, "img": "remada-maquina" },
-            { "nome": "Puxada JPG", "series": 4, "repeticoes": 12, "img": "puxada-jpg" },
-            { "nome": "Remada baixa", "series": 4, "repeticoes": 12, "img": "remada-baixa" },
-            { "nome": "Crucifixo inverso polia", "series": 4, "repeticoes": 12, "img": "cfixo-inverso-polia" },
-            { "nome": "Rosca Scott", "series": 4, "repeticoes": 12, "img": "rosca-scott" },
-            { "nome": "Rosca barra W", "series": 4, "repeticoes": 12, "img": "rosca-barra-w" }
-        ]
-    },
-    {
-        "treino": "E",
-        "area": "Peito, ombro e tríceps",
-        "treinos": [
-            { "nome": "Voador", "series": 4, "repeticoes": 12, "img": "voador" },
-            { "nome": "Supino inclinado", "series": 4, "repeticoes": 12, "img": "supino-inclinado" },
-            { "nome": "Paralela", "series": 4, "repeticoes": 12, "img": "paralela" },
-            { "nome": "Desenvolvimento máquina", "series": 4, "repeticoes": 12, "img": "desenvolvimento-maquina" },
-            { "nome": "Elevação lateral halter", "series": 4, "repeticoes": 12, "img": "elevacao-lateral-halter" },
-            { "nome": "Elevação lateral polia", "series": 4, "repeticoes": 12, "img": "elevacao-lateral-polia" },
-            { "nome": "Encolhimento", "series": 4, "repeticoes": 12, "img": "encolhimento" },
-            { "nome": "Tríceps corda", "series": 4, "repeticoes": 12, "img": "triceps-corda" },
-            { "nome": "Tríceps francês polia", "series": 4, "repeticoes": 12, "img": "triceps-frances-polia" }
-        ]
-    },
-    {
-        "treino": "F",
-        "area": "Posterior",
-        "treinos": [
-            { "nome": "Terra", "series": 4, "repeticoes": 12, "img": "terra" },
-            { "nome": "Stiff", "series": 4, "repeticoes": 12, "img": "stiff" },
-            { "nome": "Mesa flexora", "series": 4, "repeticoes": 12, "img": "mesa-flexora" },
-            { "nome": "Leg press", "series": 4, "repeticoes": 12, "img": "leg-press" },
-            { "nome": "Cadeira abdutora", "series": 4, "repeticoes": 12, "img": "cadeira-abdutora" }
+            { "nome": "Esteira", "tempo": "15 minutos", "img": "esteira" },
+            { "nome": "Elíptico", "tempo": "15 minutos", "img": "eliptico" },
+            { "nome": "Bicicleta", "tempo": "15 minutos", "img": "bicicleta" },
+            { "nome": "Abdominal supra", "series": 4, "repeticoes": 12, "img": "abdominal-supra" },
+            { "nome": "Abdominal prancha", "series": 4, "repeticoes": 12, "img": "abdominal-prancha" }
         ]
     }
 ]

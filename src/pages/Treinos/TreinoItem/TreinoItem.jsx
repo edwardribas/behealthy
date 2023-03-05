@@ -5,6 +5,7 @@ export const TreinoItem = ({
     img,
     nome,
     series,
+    tempo,
     repeticoes,
 }) => {
     const [viewImage, setViewImage] = useState(false);
@@ -37,7 +38,12 @@ export const TreinoItem = ({
 
                 <div>
                     <h5>{nome}</h5>
-                    <p>{series} séries, {repeticoes} repetições</p>
+                    <p>
+                        {(series && repeticoes && !tempo)
+                            ? `${series} séries, ${repeticoes} repetições`
+                            : `Duração: ${tempo}`
+                        }
+                    </p>
                 </div>
             </div>
         </div>
