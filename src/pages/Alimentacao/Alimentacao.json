@@ -9,7 +9,7 @@
                 "ingredientes": []
             },
             {
-                "nome": "Vitamina de frutas",
+                "nome": "Vitamina de frutas - Antes da escola (Opção 1)",
                 "quantidade": "",
                 "img": "vitamina-frutas",
                 "ingredientes": [
@@ -21,7 +21,7 @@
                 ]
             },
             {
-                "nome": "Vitamina de chocolate em pó, banana e leite",
+                "nome": "Vitamina de chocolate em pó, banana e leite - Antes da escola (Opção 2)",
                 "quantidade": "",
                 "img": "vitamina-chocolate-cacau",
                 "ingredientes": [
@@ -33,7 +33,7 @@
                 ]
             },
             {
-                "nome": "Sanduíche (lanche escolar)",
+                "nome": "Sanduíche - Lanche escolar",
                 "quantidade": "1 ou 2",
                 "img": "sanduiche",
                 "ingredientes": [
@@ -43,7 +43,7 @@
                 ]
             },
             {
-                "nome": "Panqueca de Banana",
+                "nome": "Panqueca de Banana - Fim de semana (Opção 1)",
                 "quantidade": "",
                 "img": "panqueca-banana",
                 "ingredientes": [
@@ -53,7 +53,7 @@
                 ]
             },
             {
-                "nome": "Pãozinho de frigideira",
+                "nome": "Pãozinho de frigideira - Fim de semana (Opção 2)",
                 "quantidade": "",
                 "img": "paozinho-frigideira",
                 "ingredientes": [
@@ -66,7 +66,7 @@
                 ]
             },
             {
-                "nome": "Panqueca",
+                "nome": "Panqueca - Fim de semana (Opção 3)",
                 "quantidade": "",
                 "img": "panqueca",
                 "ingredientes": [
@@ -77,7 +77,7 @@
                 ]
             },
             {
-                "nome": "Aveioca",
+                "nome": "Aveioca - Fim de semana (Opção 4)",
                 "quantidade": "",
                 "img": "aveioca",
                 "ingredientes": [
